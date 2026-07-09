@@ -15,10 +15,19 @@ int AskAge ()
     Console.WriteLine("Сколько тебе лет?");
     string ageInput = Console.ReadLine();
     int userAge = int.Parse(ageInput);
-    return userAge;
+    
+    while (userAge < 0 || userAge >120)
+    {
+        Console.WriteLine("Введите корректный возраст (0 - 120):");
+        string input = Console.ReadLine();
+        userAge = int.Parse(input);
+    }
+        return userAge;
 }
 
 int userAge = AskAge();
+
+Console.WriteLine($"Принято: {userAge}");
 
 if (userAge < 18)
 {
