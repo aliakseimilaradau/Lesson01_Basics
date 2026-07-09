@@ -3,20 +3,30 @@
 Console.WriteLine("Как тебя зовут?");
 string userName = Console.ReadLine();
 
-Console.WriteLine($"Привет, {userName}");
+void PrintGreeting (string name)
+{
+    Console.WriteLine($"Привет, {name}!!!");
+}
 
-Console.WriteLine("Сколько тебе лет?");
-string ageInput = Console.ReadLine();
+PrintGreeting(userName);
 
-int userAge = int.Parse(ageInput);
+int AskAge ()
+{
+    Console.WriteLine("Сколько тебе лет?");
+    string ageInput = Console.ReadLine();
+    int userAge = int.Parse(ageInput);
+    return userAge;
+}
+
+int userAge = AskAge();
 
 if (userAge < 18)
 {
-    Console.WriteLine("Ты несовершенолетний");
+    Console.WriteLine("Ты несовершеннолетний");
 }
 else if (userAge <= 65)
 {
-    Console.WriteLine("Ты совершенолетний");
+    Console.WriteLine("Ты совершеннолетний");
 }
 else
 {
