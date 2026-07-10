@@ -9,7 +9,7 @@ double AskWeight()
     {
         Console.WriteLine("Вес указан не верно. Повторите ввод.");
         string input = Console.ReadLine();
-        double userWeight = double.Parse(input);
+        weight = double.Parse(input);
     }
     return weight;
 }
@@ -23,7 +23,7 @@ double AskHeight()
     {
         Console.WriteLine("Рост указан не верно. Повторите ввод.");
         string input = Console.ReadLine();
-        double userHeight = double.Parse(input);
+        height = double.Parse(input);
     }
     return height;
 }
@@ -31,7 +31,7 @@ double AskHeight()
 double weight = AskWeight();
 double height = AskHeight();
 
-double bmi = weight/(height * height);
+double bmi = Math.Round(weight/(height * height), 1, MidpointRounding.AwayFromZero);
 
 if (bmi < 18.5)
 {
