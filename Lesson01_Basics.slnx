@@ -1,7 +1,9 @@
 <Solution>
+  <Project Path="Grades/Temperature.csproj" Id="4e16cd83-cc7c-472b-a716-36fa0f1118f4" />
   <Project Path="Lesson01_Basics/Lesson01_Basics.csproj" />
   <Project Path="Lesson02/Lesson02.csproj" Id="b6bc7c13-e11f-4452-acce-5b742b714016" />
   <Project Path="Lesson03_BMI/Lesson03_BMI.csproj" Id="9ca4687f-ced4-408b-ac80-4563f7ff5fda" />
   <Project Path="Lesson04_ForLoop/Lesson04_ForLoop.csproj" Id="c7aaa747-051b-454c-be2b-7c15623dbf69" />
+  <Project Path="Lesson05_Arrays/Lesson05_Arrays.csproj" Id="45b0975c-1c4f-49a0-a817-9fda950288ed" />
   <Project Path="multiplication table/multiplication table.csproj" Id="2d34120f-b26f-45ff-a857-23f61b38b27d" />
 </Solution>
