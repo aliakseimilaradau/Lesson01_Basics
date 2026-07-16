@@ -2,8 +2,8 @@
 
 int[] grades = { 75, 34, 56, 90, 65, 100, 1 };
 int sum = 0;
-int max = 0;
-int min = 100;
+int max = grades[0];
+int min = grades[0];
 
 for (int i = 0; i < grades.Length; i++)
 {
